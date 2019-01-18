@@ -13,10 +13,10 @@
  */
 'use strict';
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import createReactClass from 'create-react-class';
+var React = require('react');
+var PropTypes = require('prop-types');
 var ReactNative = require('react-native');
+var createReactClass = require('create-react-class');
 var invariant = require('invariant');
 var keyMirror = require('keymirror');
 var resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource');
@@ -28,6 +28,7 @@ var {
   StyleSheet,
   Text,
   View,
+  ViewPropTypes,
   WebView,
   requireNativeComponent,
   DeviceEventEmitter,
